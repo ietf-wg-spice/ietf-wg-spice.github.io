@@ -189,17 +189,23 @@
     </header>
 
     <section id="main">
-        <h2>Workload Identity in Multi-System Environments</h2>
+        <h2>Secure Patterns for Internet Credentials</h2>
 
-        <p>The IETF Workload Identity in Multi-System Environments (WIMSE) working group addresses authentication and identity challenges in distributed microservices architectures. WIMSE focuses on defining standardized solutions for managing workload identities and secure communication between services.
+<p>A digital credential expresses claims about a subject and links them with cryptographic keys. Some sets of claim names have already been defined by the IETF and other standards development groups (e.g., OpenID Foundation).</p>
+
+<p>Digital credentials typically involve at least three entities: issuer, holder, and verifier. An issuer constructs and secures a digital credential for a holder. Holders may be willing either to partially disclose some values of their attributes or to demonstrate some properties about their attributes without disclosing their values. Holders disclose credentials, attributes, or proofs regarding attributes in what is called a "digital presentation" to a verifier.</p>
+
+<p>Some holders may wish to carry more than one digital credential. These credentials, together with associated key material, can be stored in an identity digital wallet.
         </p>
 
-        <h3>Key Objectives:</h3>
+        <h3>Program of Work</h3>
+        
         <ul>
-            <li>Develop a unified architecture for securely managing workload identities.</li>
-            <li>Create token-based solutions to authenticate and secure REST/HTTP communications between workloads.</li>
-            <li>Ensure interoperability across diverse platforms.</li>
-            <li>Collaborate with other IETF working groups and external organizations to ensure conhesive standards.</li>
+<li>An informational Architecture that defines the terminology (e.g., Issuer, Holder, Verifier, Claims, Credentials, Presentations) and the essential communication patterns between roles, such as credential issuance, where an issuer delivers a credential to a holder, and presentation, where a holder delivers a presentation to a verifier.</li>
+
+<li>A Proposed Standard document defining SD-CWT, a profile of CWT inspired by SD-JWT (from OAuth) that enables digital credentials with unlinkability and selective disclosure.</li>
+
+<li>A Proposed Standard Metadata & Capability Discovery protocol will be developed for JWT, CWT, SD-JWT, SD-CWT, CWP, and JWP using HTTPS/CoAP. This protocol, intended for CBOR-based digital credentials will enable the three roles —issuers, holders and verifiers— to discover supported capabilities, protocols, and formats for keys, claims, credential types, and proofs. The design will be inspired by the OAuth "vc-jwt-issuer" metadata work (<a href="https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/">draft-ietf-oauth-sd-jwt-vc</a>), which supports ecosystems using JSON serialization.</li>
         </ul>
         
         <p>Most collaboration in the working group is via the mailing list.</p>
