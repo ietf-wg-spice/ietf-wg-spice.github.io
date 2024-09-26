@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPICE IETF Working Group</title>
+    
+        
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Secure Patterns for Internet Credentials: The SPICE WG will analyze existing and emerging IETF technologies and address any remaining gaps to facilitate their application in digital credentials and presentations.">
+    <meta name="keywords" content="SPICE, IETF, JOSE, OAuth, COSE, RATS, SCITT, WIMSE">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>" type="image/svg+xml">
+
+
+    <!-- Use JavaScript to obfuscate the email address to prevent spam -->
+    <script>
+        function decodeEmail() {
+            var coded = "gro.ftei@sriahc-esmiw";
+            var emailElement = document.getElementById("chair-email");
+            emailElement.href = "mailto:" + coded.split('').reverse().join('');
+            emailElement.textContent = coded.split('').reverse().join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', decodeEmail);
+    </script> 
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px; 
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(to right, #35424a, #2c3e50);
+            color: #ffffff;
+            padding: 30px 0;
+            border-bottom: #e8491d 3px solid;
+            text-align: center;
+            width: 100%;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .highlight {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        #main {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            width: 80%; 
+            max-width: 800px; 
+        }
+        .documents {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .document-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: calc(25% - 20px);
+            margin-bottom: 20px;
+        }
+        .double {
+            width: calc(50% - 20px);
+        }
+        .document {
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            text-align: center;
+            height: 100%;
+        }
+        .document:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .document h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #35424a;
+        }
+        .document p {
+            font-size: 14px;
+            color: #666;
+        }
+        .emoji {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 30px;
+            color: #ffffff;
+            background: linear-gradient(to right, #2c3e50, #35424a);
+            text-align: center;
+            width: 100%;
+        }
+        a {
+            color: #e8491d;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ff6347;
+        }
+        .text-link:hover {
+            text-decoration: underline;
+        }
+        .double ul li {
+          text-align: left;
+        }
+        footer a {
+            color: #ffffff;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 1024px) {
+            .document-link {
+                width: calc(50% - 20px);
+            }
+            #main {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            #main {
+                padding: 20px;
+                width: 95%;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .document-link {
+                width: 100%;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+            #main {
+                padding: 15px;
+            }
+            .emoji {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span class="highlight">WIMSE</span> IETF Working Group</h1>
+        </div>
+    </header>
+
+    <section id="main">
+        <h2>Workload Identity in Multi-System Environments</h2>
+
+        <p>The IETF Workload Identity in Multi-System Environments (WIMSE) working group addresses authentication and identity challenges in distributed microservices architectures. WIMSE focuses on defining standardized solutions for managing workload identities and secure communication between services.
+        </p>
+
+        <h3>Key Objectives:</h3>
+        <ul>
+            <li>Develop a unified architecture for securely managing workload identities.</li>
+            <li>Create token-based solutions to authenticate and secure REST/HTTP communications between workloads.</li>
+            <li>Ensure interoperability across diverse platforms.</li>
+            <li>Collaborate with other IETF working groups and external organizations to ensure conhesive standards.</li>
+        </ul>
+        
+        <p>Most collaboration in the working group is via the mailing list.</p>
+        <p>For more information about IETF, visit the <a href="https://www.ietf.org/" class="text-link">official IETF website</a>.</p>
+
+        <h3>Links</h3>
+        <div class="documents">
+            <a href="https://datatracker.ietf.org/wg/spice/about/" class="document-link">
+                <div class="document">
+                    <div class="emoji">📜</div>
+                    <h3>Working Group Charter</h3>
+                </div>
+            </a>
+            <a href="https://www.ietf.org/mailman/listinfo/spice" class="document-link">
+                <div class="document">
+                    <div class="emoji">✉️</div>
+                    <h3>Join Mailing List</h3>
+                </div>
+            </a>
+            <a href="https://mailarchive.ietf.org/arch/browse/spice/" class="document-link">
+                <div class="document">
+                    <div class="emoji">🗂️</div>
+                    <h3>Mailing List Archives</h3>
+                </div>
+            </a>
+            <a href="https://datatracker.ietf.org/group/spice/documents/" class="document-link">
+                <div class="document">
+                    <div class="emoji">🏗️</div>
+                    <h3>Draft Documents</h3>
+                </div>
+            </a>
+            <a href="https://datatracker.ietf.org/group/spice/meetings/" class="document-link">
+                <div class="document">
+                    <div class="emoji">📅</div>
+                    <h3>Meetings</h3>
+                </div>
+            </a>
+            <div class="document-link double">
+                <div class="document">
+                    <div class="emoji">📽️</div>
+                    <h3>IETF Meeting Recordings</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=yw4OL2wnQ_g">IETF 119 (BoF)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=kSWTA0PXPFA">IETF 120</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="https://github.com/ietf-wg-spice" class="document-link">
+                <div class="document">
+                    <div class="emoji">🛠️</div>
+                    <h3>GitHub</h3>
+                </div>
+            </a>
+        </div>
+
+        <h3>Contact</h3>
+        <p>Email: <a id="chair-email" href="#" class="text-link"></a></p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><a href="https://github.com/ietf-wg-spice/ietf-wg-spice.github.io" class="text-link">🐙 Edit this page on GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
